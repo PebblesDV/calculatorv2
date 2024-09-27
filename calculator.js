@@ -152,7 +152,7 @@ document.addEventListener("keydown", function (event) {
 
   if (!isNaN(key) || ["+", "-", "*", "/", "(", ")", "."].includes(key)) {
     showOnDisplay(key);
-  } else if (key === "Enter") {
+  } else if (key === "=") {
     calculateResult();
   } else if (key === "Backspace") {
     deleteLast();
