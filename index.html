@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="calculator.js"></script>
+    <link rel="stylesheet" href="calculator.css">
+
+    <title>Calculator</title>
+</head>
+<body>
+
+    <div class="calculator" id="calculator">
+        <div class="display">
+            <input type="text" id="result" disabled>
+            <input class="button dark-pink" type="button" value="c" onclick="clearDisplay()">
+        </div>
+
+        <div class="buttons">
+            <input class="button medium-pink" type="button" value="&#40" onclick="showOnDisplay('&#40')">
+            <input class="button medium-pink" type="button" value="&#41" onclick="showOnDisplay('&#41')">
+            <input class="button delete dark-pink" type="button" value="del" onclick="deleteLast()">
+
+            <input class="button" type="button" value="1" onclick="showOnDisplay('1')">
+            <input class="button" type="button" value="2" onclick="showOnDisplay('2')">
+            <input class="button" type="button" value="3" onclick="showOnDisplay('3')">
+            <input class="button light-pink" type="button" value="/" onclick="showOnDisplay('/')">
+
+            <input class="button" type="button" value="4" onclick="showOnDisplay('4')">
+            <input class="button" type="button" value="5" onclick="showOnDisplay('5')">
+            <input class="button" type="button" value="6" onclick="showOnDisplay('6')">
+            <input class="button light-pink" type="button" value="*" onclick="showOnDisplay('*')">
+
+            <input class="button" type="button" value="7" onclick="showOnDisplay('7')">
+            <input class="button" type="button" value="8" onclick="showOnDisplay('8')">
+            <input class="button" type="button" value="9" onclick="showOnDisplay('9')">
+            <input class="button light-pink" type="button" value="-" onclick="showOnDisplay('-')">
+
+            <input class="button" type="button" value="0" onclick="showOnDisplay('0')">
+            <input class="button medium-pink" type="button" value="." onclick="showOnDisplay('.')">
+            <input class="button light-pink" type="button" value="=" onclick="calculateResult()">
+            <input class="button light-pink" type="button" value="+" onclick="showOnDisplay('+')">
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
